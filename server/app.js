@@ -12,7 +12,7 @@ const axios = require('axios');
 
 // Calendar Service
 app.get('/month', (req, res) => {
-  axios.get('http://localhost:3001/month', {
+  axios.get('http://3.16.164.208:3001', {
     params: req.query
   })
   .then(({ data }) => {
@@ -48,7 +48,7 @@ app.get('/api/0', (req, res) => {
 
 // Recommendations
 app.get('/listings', (req, res) => {
-  axios.get(`http://localhost:3002/listings`)
+  axios.get(`http://52.53.211.102:3002/`)
   .then(({ data }) => {
     res.json(data);
   })
